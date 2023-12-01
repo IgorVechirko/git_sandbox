@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-bool findElem(int[] _array, size_t _size, int _elem)
+bool isElemExist(int[] _array, size_t _size, int _elem)
 {
 	for(int indx = 0; indx < _size; ++indx)
 	{
@@ -18,7 +18,7 @@ int main(int argc, char** argv)
 	int searchable = 10;
 	printf("%d %s in array",
 			searchable,
-			findElem(array, sizeof(array), searchable) ? "exist" : "doesn't exist");
+			isElemExist(array, sizeof(array), searchable) ? "exist" : "doesn't exist");
 
 	return 0;
 }
