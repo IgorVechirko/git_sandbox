@@ -11,6 +11,17 @@ bool isElemExist(int[] _array, size_t _size, int _elem)
 	return false;
 }
 
+int findElem(int[] _array, size_t _size, int _elem)
+{
+	for(int indx = 0; indx < _size; ++indx)
+	{
+		if(_array[indx] == _elem)
+			return indx;
+	}
+
+	return -1;
+}
+
 int main(int argc, char** argv)
 {
 
